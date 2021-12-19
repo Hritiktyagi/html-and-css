@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/0127e58d76.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            height: 90px;
+            color: black;
+            display: flex;
+            justify-content: flex-end;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+
+        }
+
+        .heading {
+            height: 200px;
+            width: 1073px;
+            text-align: center;
+            font-size: 22px;
+
+        }
+
+        .navbar {
+            position: relative;
+            right: 110px;
+            word-spacing: 20px;
+
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+            position: relative;
+            top: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-family: sans-serif;
+            word-spacing: 5px;
+            color: black;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+
+
+        }
+
+        li a.active {
+            text-decoration: underline;
+        }
+
+        .container {
+            height: 650px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0UoJhoBCkMKOzUvItB5rnLYxtDIXC8bN0oh9lLATecS3KzbY-plG8btTYRGbBK6kTRPI&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: 'Varela Round', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        .box {
+
+            height: 300px;
+            font-family: 'Varela Round', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            background-color: rgb(245, 237, 237);
+
+        }
+
+
+        .secondbox {
+            height: 100px;
+            width: 1284px;
+            padding: 25px;
+            text-align: center;
+            line-height: 35px;
+
+        }
+
+        .content {
+
+            height: 650px;
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        .process {
+
+            height: 220px;
+            width: 667px;
+            margin: 25px;
+            font-family: 'Varela Round', sans-serif;
+            position: relative;
+            bottom: -40px;
+            right: 62px;
+
+
+
+
+
+        }
+
+        .cstm_img {
+
+            height: 433px;
+            width: 442px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            right: 560px;
+            bottom: 180px;
+
+
+        }
+
+        .cstm_img1 {
+            position: relative;
+            bottom: 53px;
+
+        }
+
+        .cstm_img2 {
+
+            bottom: 500px;
+            top: 40px;
+        }
+
+        .img {
+            border-radius: 5px;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+
+        }
+
+        .hash {
+            position: relative;
+            top: 0px;
+            left: 20px;
+            font-size: 49px;
+
+        }
+
+        .services {
+            /* border: 1px solid white; */
+            height: auto;
+            background-color: rgb(71, 71, 167);
+        }
+
+        .content4 {
+            height: 247px;
+            width: 396px;
+            position: relative;
+            left: 100px;
+            top: 60px;
+        }
+
+        .row {
+            /* border: 1px solid white; */
+            height: auto;
+            margin: 25px;
+            position: relative;
+            bottom: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .coloumn {
+            /* border: 1px solid white; */
+            border-radius: 8px;
+            height: 260px;
+            width: 400px;
+            margin: 25px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .inner_coloumn {
+            border: 1px solid black;
+            width: 200px;
+            height: 246px;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        i {
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            margin: 70px;
+            color: rgb(71, 71, 167);
+
+        }
+
+        .container5 {
+            /* border: 1px solid black; */
+
+            height: 250px;
+            padding: 12px;
+            margin: 30px;
+            display: flex;
+            position: relative;
+            left: 0px;
+
+
+        }
+
+        .unit1 {
+            /* border: 1px solid black; */
+            height: 310px;
+            width: 313px;
+            margin: 5px;
+            font-family: 'Varela Round', sans-serif;
+            line-height: 27px;
+            position: relative;
+            left: 50px;
+
+        }
+
+        .unit2 {
+            /* border: 1px solid black; */
+            height: 310px;
+            width: 313px;
+            margin: 5px;
+            font-family: 'Varela Round', sans-serif;
+            line-height: 30px;
+            position: relative;
+            left: 163px;
+
+        }
+
+        .unit3 {
+            /* border: 1px solid black; */
+            height: 310px;
+            width: 313px;
+            margin: 5px;
+            font-family: 'Varela Round', sans-serif;
+            line-height: 30px;
+            position: relative;
+            left: 253px;
+        }
+
+        .footer {
+            /* border: 1px solid black; */
+            height: 100px;
+            background-color: #f8f9fa;
+        }
+
+        .rights {
+            /* border: 1px solid black; */
+            height: 90px;
+            width: 420px;
+            margin: 5px;
+            position: relative;
+            left: 80px;
+        }
+        .social{
+            /* border: 1px solid black; */
+            width: 420px;
+            height: 90px;
+            margin: 5px;
+            position: relative;
+            left: 993px;
+            bottom: 99px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            bottom: 140px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div style="position: relative;right: 840px;"><img src="http://35.166.220.82/Mach_new/assets/img/logo.png"
+                alt="name">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="http://35.166.220.82/Mach_new/">Home</a></li>
+                <li><a href="http://35.166.220.82/Mach_new/">About</a></li>
+                <li><a href="http://35.166.220.82/Mach_new/">Technologies</a></li>
+                <li><a href="http://35.166.220.82/Mach_new/">Portfolio</a></li>
+                <li><a href="http://35.166.220.82/Mach_new/">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="heading">
+            <h1>WE OFFER ALL KINDS OF ENTERPRISE, WEB AND MOBILE APPLICATION SOLUTIONS</h1>
+            <p>We are hardcore technical professionals who love to provide better solution in the tech world.</p>
+        </div>
+
+    </div>
+
+    <div class="box">
+        <div class="secondbox">
+            We are a full-cycle Software Development Company delivering innovative solutions for SMBs and Enterprises
+            with a proven track record in Product Development, Technology Consulting and IT Outsourcing. Our Experience
+            Design, Complex Engineering, and Agile Delivery give you the best software product for better business
+            outcomes.
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="hash">
+            <H1>#</H1>
+        </div>
+        <div class="process">
+
+            <h1
+                style="color: black;display:;font-size: 41px; line-height: 20px;letter-spacing: 2px;position: relative;left: 80px;">
+                Our software</h1>
+            <h2
+                style="color:rgb(81, 81, 192);font-size: 41px;line-height: 15px;letter-spacing: 2px;position: relative;left: 80px;">
+                Development Process</h2>
+            <p style="line-height: 25px;">Machtig Solution is a software development company for startups and
+                enterprises. We follow an agile
+                software development approach for all types of development projects. At Machtig, our team of software
+                developers uses agile Scrum and agile Kanban to ensure on-time delivery and agility for projects.
+            </p>
+
+
+
+            <div class="cstm_img">
+                <div class="cstm_img1">
+                    <div class="img"
+                        style="background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIVFRgWEhUYGRIYGBIZGBwSEhgaGBISGRUaGRgVGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHBISHjQsJSs0NDQ1MTQxNDQ0NDQ0NDQ0NDQ0NDQ0NDQxNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQxNP/AABEIALgBEQMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAECAwUGB//EADkQAAICAQMDAgQFAwIEBwAAAAECABEDBBIhBTFBIlETMmFxQlKBkaEGFCMVsWJykvAWJDNDwdHh/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJREAAgIBAwMFAQEAAAAAAAAAAAECETEDEiEyQVETInGRoQSx/9oADAMBAAIRAxEAPwDynHzNXpnRsmbcEIFDye8ycM2+iYtSXC4Wp2vz3hKM5KoZNNN6cZXNcAOTp2VSw2H0kg1Bam5rdPrMbujE7u7V5+sxSDfPfzKUdSPWKctN9H6ICSAiElUaRmOfBi1NFiQtA817RyPT+ss1Zc7WeuVWiPKjgX9ZpXAu4bp9RottZMLhwPmRzTEAc1fvf7ykajSBlbY/DqWBb0vj53LXg9vMjptJqXTfjxsyJa2q2OTZH1lw0epHzYkU8Vv2KTfarI9jCWsmtrr6JUEubf2NlyaNlBG9H3JYVRt2Ekvz5YdgfpLBi0HH+bKPocYPF+aEpXR6hWZTg9R3tyByFHqKnse47e8bNiyL8+AeB25BPYH2JuZRlFKrQ9ybyX49No6t9Q24luFQkAbjtJJX2A4gr48e9gr1jF0SwJbjiuPt/MdNJlHDadie3KEEn3qvaWHSZPOmcADyjfvdQcovukG5eSzR6LG4t86IfIPPHij7wj/SwRa502G63Grr3mYuJvT/AIye57HkfSTbTkWTicDxYPEyafaZLTvJo4um5G+XKnHb1wbU48mI7dwa/wApuDphXt8N7+lxDA1/I4/Qyo2nzKxq75Ya2nyKu7g37eIGdTR5HMsVDXAf+ZQ2ndjwrH9Js5J9JaLV1Y9o66lfaDNgYd1P7R/hN7H9pO5lBa6uuxI/WTTqDjs7fvM8oR3EapLYzZTquQfjMH6j1LI6kFrEzxGdeJLSC2Zb/NJRs45iEokeKKKACiiigAo0eKADRRRRAWYDNbpgzb0OMkMTSm+xmRgPMOxZXUgqSCDYrwZVyr25Kjtv3YNnq2l1qP8A5GLM47qe4mZn6dlQb3UgeTL9X1LUuVZ3JrtKX1eZgVZmIPcGQlr8bqNJehztsFAkgI4WpICdCRgOo4P2lmTE3w1fdYtlr8vn+Y2Ic/vEoTY1/Pa7efHniWlwT3D+irqXBTDqAgu9rPt3NRNjg+FhGp6RqQQmTMllt3qf8d2CGq7Nn9jMvQ4sLNWd2ROOUW+bA5HtVmH6nSaBarUO90SQnqUVVcivr+kpacNvKV/JnKUlKr/CXT8WqzUyagBsdj/I23YWPIBo2CAJfj0GrfcH1CimF2QN9bWV0NDdTUOPaZWBNJvZXZxjDMFdKtlvgspBqFZcXT1+V8rjkGwAQb7qaqu/7zzJxqTS/wACSfj8CupvrMQD5NSpY/KEO43dm+PT3gLf1FrCKOZiD4IH7dpPVnRbW+HvLgUm+/VYAtj7jkzHErTgmvcvwcIprlB2Lquddu162Xt4HF+IT/4g1Jvc4awQbUfxMsCPU0elF9jTZHwaGPrWdezDx+EeJY/Xs5Nkr/0iZe2OBD0o+A2R8Gn/AK3m27fTX/LzIabquRDYo/cd4CBHqNRUboajFYRpZesuxsov7Rl6q1VsWZ1SQEaVKkUW6jPv5oD7SipOoqgBACORJVHiGZOqXvKkhWtWCIYEk4ooowFFFFABRRRQAUUaKAD4zzNBMZb5RM1TNTTM34e59ppp5EzVboGpOEZavH/t9ZnanTZMZG8EXyPrOh0K9QfTMuM/4l7iuZkvo9VkrcrNXa51SjxwmZRlzzRnjmSAjvjKkqwojuI6iZUWTTuJdgZF3hk3FlIWh8rXYMpEN0a5PiXjXc23t7gippFCZluOJBcbHsD2J7HsBZMMQsjggU6t2I7MD2r7zpW1HVGQK2BQPT62xgHbVEnn9zJ9KMs2S5teDj007m6RrFE+k3RNdvvL06dnYEric1X/ALbee3iamrGsD43ysFemCMdpuvVsYC/LAczdTB1RgLz409Jo7lBIHAB9NDv3qces3CVL9BzaXY5ROi6o9sL/AGKEH70fEWq6VmxLuyoU7UH4LfYeZ0D6HVAj4muxgqxVSMl7XNMb4EF63hGwtk1XxWU0FDA+snlgPC1MlqyckuAWo21j6OfAkpESQnTRsOBH2xxHAjoBqj1HqPUVARqPUeo9RUMjUVSREaJoBRqj1FEMC1qzPTvNPVjiZoXmIljxSz4ZjfDMAIRSfwzIlTABooooAKKNcUAEJpaVyACO8zYdo244mmlklnVdBya9ldMB4ItrAuvpAMx1iAliwCkg/Q+YX0DVawPWD53FcjipTr9PrN7pkDbiSWA7TufT3Mu5kM5YksbJ7mTUSO0g0e8msxo0FUO0b5A6HGwVyGAJF9ufaBiX4hYXkimHI7gHzNI5JeCvWIyu28212T+Ynm/5lZ6nqACgyuFN2A57XcI1+IK9K27gWdwPPPmaXT9L0xkB1GV0yBTapds1nuSpUCqr9bkalx5RSSeTm3yMfmYnm+STz7/9+0f4jEUSa8izRnR6nJ0hW9CZno0fWAtDgsvIvkefcyrRarTBFrSnK6hrZiR6VJ4qyCaK3MdqlkHwc+BLExseQpI+g7VOpwa7L8RVx6NU3WQrJxYFhrIHAv8AmW6HJrXY4cKY0a/iEcnezkA0TfHN14hsSVsLOV+C/lW9+VPb3h2LouoZdwxsF9yKnU6v+n+pPufNmxorAITv4Zb4WgPeoJ/YZAg+PrQgtlChr4U1x9OIJqXSEm+xyuTGVJVu44MQmr1XSadVDY8xfIT6rHj3mWBHtoaY4j1FUeJooaPUeKS0BExpIiNJGNEZKjH+GYNACakcTOT5prZ8RozIccyWAcAIxAlaniPcAJ7RIFBHEeAFLYxK2xwsRFYCAvhmPC9oigABCtCfEFhGjPqlQdSQmdF0rW6hHRsXzDhbHHMP6lk1/wAXc973H4RwRMnTarIhXZ+FgRx5m11XPrzsd1oHhdo95tPWcWoto5paevKVwSaMfV9OyoN+RaBPf6mDLC9aNQADl3UfzGCLL03au7+DSMZxVTyTEM6coLbSLBvv71x/NQNYTonpwZo1wEsC1xxUvwxyL3cGuw45+tw7o+tREbdpjmKFnvaNq7gAC/F8bTX3Mh1BzsKDHSq3L135IA48URBundZzabc2EgFwASy3VdiB78kX9YtRXGwgzdXqOR0UabQIjercdgLbV23tBHBo+R54kem4+pZUf4CY0xfEYkekFHsnmz2vj7mOmfqbj4uTMuPGVJ3DZe3buACiz2Ama2gdWrNqSiOu8MHNMC1MCt8ngf8AYmKjJFto2MnTuoEB8mpxJfHLAMrP3T5bF0Oe0y9Pp8e0PqNWQwDejGx38jldwPawI46f09QHfUZMvqoqi0QALs2LIri/rIBdIC648LuGRQhYi0yc2ft2lRhJ9TJcl2JanFo1QAajK7EblC3tR/r9ZX/d6NcljEzJQtXPO/yZp6XU5l2pj0yLk2CyRy9j5iD9pna7oeVDvyjbvJNCu5+nibbdvTX0Tavlk9R1zG6Oi4FW1pK/DMQCHpo0Hf8A3loTGPaJxcsstOsGcEPtJrhY+IcdRjHb/aQOsHgSdke7KtlA0rSY0h8x31TeJUc7SWoIOS0aVfJi2IIMXPvGMlyXZDoILoJE5x4lBEjUzcmMWfJYMxM/ebDiZepXmZyYy3EeJOoNgyy4PEInFca5AtAZMtIlowEkBAQ1RR4oAAyzAaYSuOh5gsgb+LUMg9PmpuJ1PV6nZiUDgjb9SJzqcgfaaGg1WZXQ4ybUjbxxc6ZaOlJqUlgUdScVtiw3X9J1hcpksstGieK95X/oGQAlmQULosLMM6pptez7sjHe44pqse0EPRsx5d1HH4n7wjr6CVQaG9HWfMkzKEsxHkfeQIo17R1m68mT8HVjpGbKjbGX4ZRXbj1dgaq/dZgHp679hJNpkZfHrVSwH8TYwa3JsRUcogUhtv4gG88j805/LqXJvcbG6iOPpKVbaZnGwrQafE7VnyMuNVJF7msiqQC+LhrNoFZKDOApDAdz5BX2rmYGgy41dTlQ5MYu1DEFvaj96mlqOsJ6QmnRCjlrv1c3atQBIpqI+kjcqNGjUPUMQf8A8vpn3BWUKU3BlauWsE/b7wzTde1jnZhwY8ZWg3oVSKHc397nPv8A1HqiKVwo2lfSO4Pckm+frAc2ryOzOzHcxs0SLNV/sBJcn2E4ujY6vqdSjK7uCWBAIPIAN0fbkzMy67K/zux+5MGsnvJgQTbHGNZJbifJ/eKoqko6KGAjxRSWgFFEBJrhY+JLRVkIxhS6U+TKMiUZLiFldRjJVGIkNDIMJma1eZq1ANekiSGZfmS3kSL94gJAiYzGWJk95TUiYAGfGEXxxAbiuABvxxFAooWBbEIooAbGlNoIXi1LpwprkH9RAemtakQkidqipQVkbnF8GwNbqdUwUvRUcVxKsfTcjkl3AAJFu3mDdMbIHAxmmPFwx+l5ndkZxY5JY0OfMxWg02oUl8G3rRa91t/JJOm4FH+TMAeeFF37ERKdGhv1uK7Hi29/tJY+m4Fv4uaiCR6edw+kZX0aMCFdwLsNxuPg8dpqv55d5Mh68ViKHBxOLYbMYbtu+UFSKv8AQTN1apvb4ZvHZ2/8s0v7rG24hFRPT6AbumBrnuTBOouGcFUKLQABFXXmv2m8Y0mjnTe5sXRtTkxbymBX43bnx2Mapd0fqDM7U5i7s7AAsxJA7An2mjl67qRjGFXAxhStBF9SnvZmUJnNrCLinbbJARxEohCaVyAdpokAXxZP3kpFWVCTEOPSXUbsjKg+9n9hJIunQkMxeq2lRQJ83NFHyLcBAS1NO7dlJ/SE/wB+ik/DQAEAernn3lJ1eTmjV+0dIVssTQkqGLAAyKJjHzG/tBxuPHJl40WSrIofWKvCGWJq0UUE5lT6pj9PtJrpkFbm/aWDGAfSv7xOxoEZ2Pe5WYa6fm/iD5kA7TNxGmVRjHkTM2hiAg+tX0wiVakWpkNDMHIIytJ5xKQZkBbcapAGSuAC2xtke42+AC2RRt0UALIoxjwA0OltyRNAiZPT2pxNkNRBHidug7iZyyaHSekanJb4V+Tk3xLsnTNTkO92X6ktUq0n9QajFvGNgN4o8fTxJ5+m5tiOXtXPv2vyZuqM3dgWv0fwyBvV7H4T2+kHE2B0jEl/Fzrddk5Nxhm0iAAIcjVyxNC/oIUFmdjPpb9D+0M6pmyOqNkVQtEJRuwaPP8AEfX9SR6241RVDD09yD7xmx5GwBy9oNtLt+td5S8A82wD4CEbmevVjUjyVJ9TD7S/INIhXaWcerdVi+PTV15geoHAP1laYnJoKSeD2PY9jM5OnwizRy9UF/40VRx355s8/wAmU6nqOXJ87kjuBQAH7SLdOyBC5ACr/wAQs812hY0umQXkyFzfbH5H3MXLFwjOLHz/ADLU07mjtNE1ZHFw3HqFIITCKIKgnwa4onz3MsAytaZXCoACbI7e49+0aQWUHQ0LZ1AsA88/cSTHCtbQWq79jFeBTQ3OeK9iZc3xD6Qiop458frKqhFhyZCPQqqBz9aleQr+Ny1+Flb40QgO+73CmOhYk/DSl/4vEGMWI8nYvfsT4kgnPrf9BKl7ne1fQS1V/Kvfy0mihg3sP1MH1JNwh2/Mf2g+bKp7SWNA8iY8bbMmihSGQcGWjHDMWmsdpDi2FnKaheTBamj1HHtcj7wATBqhkY0sqMViAjca45EaACiiigBe3eNJ5RzIQAs0zUwm+ZziHmdDiNqD9J1fzvhoiZdpdHkyOEQWzcD6zW1HTNYD8HJwFANFhVTO0vUcmMqUoFDY+8s6h1HPmfdkc7iK44FTqVJGTtlmu6YuNbORS/HpXn+ZnLJ7B+JpA147RMEJhYML0KY2xMXchhe0buLrj0/eCiEdJyY1LfETf22iubv38RxyN4IafJtNhAxogAjuSCB/vCtLn1bIFxgBVG2yAK2ijyT3FQRGKta8MDxfgg8SYwuS6ZMoQBiWF92I3Ej/AKoSBEk0uOyc2aq7gWWJAHA4+vtItkxm0woSTwGc+q6N/pUoVsKqvDNk3WwPysgJ4H3FQrNkyZBaIqY0ZRxSkMaHPv8AN7eZAFub47KN7KuNSo9NCiOLrv5lKjEhbeTkYVtq6Pvcjlx41I+I5cgjdta+PNfvL8OQsy/2+L5b5Iu7Hk9pSAZlfIP8ePag8nx+sZkUV8TITzyF8Sb6dlVjkyhTz6Fbz7cStShC/DxkmwbPmvEYDo938NOOOW7iWMOSMj1x2XzE+47viOE7elfMhiyIOEXc3ktEA+M8HavHu0TubG5uPZZTlytzbfoJWX44ETZSRdqXFUBBQJI2ZJVkSZSRXUM0ukZ+fEqIAhWkyvVLCMU3yNui9NOin1SxswApRBX9J9RkjqOKAlNULJzXWFO83Mhu83OsjnvzMTIJwzXuZSwRBkg0jGkDJlpGNFAB4o0UADNQOZTLs3aUxsBTb0L2gmJNbpRsETbQfuoieAuHPochCE1TcCCjTMfE2TjyviAJ9C+3f951tqPUZ030lJ6OqC8uVV+g5MH1OLGQoxBiRe4nsfqJop0xQAXcc/WzUuyajTIPSNze7Hj9pD1Y4imy1pPMnRjJoj+I1G0bNjzEICxIIAurJEK1XUdx3bavtQocTOOdviK4rdxXHE1TwZvLLtarh23rtYmyPa+ZQ6Ylb1sWBVWO3uHPdP5H7QvqaOHG99zkC+KrxUEbIg2Um5/Vu3CwxJ9NCEkES7pud1FYk3OTyxF7f/yhK82NwVORhtY+oKaoWLJA+8t253YnjHuQmr2+hePP/N+0odMSuvqLrVsK5J/KD/32kdh2SUpZXGhYmtnuDxf37QlMuRwQ2QJt4IPpP8SGfOxICIuJRe0kEGve/JqpQ5xg2WLse57Lf68mUBMHGAKBfJYu+32l2TV5OeQnFBQPEDbUMRV0PoAJXcVjovXIB+Gz7sbkCxjASYURjGUSYSOG9otpiqwGZowJkgojNKUQskpEL0+6vT/MF0+VEa3qoLr+t8kY+BMZTUWUm2aGfavORuZlavqo7JMrNqWc2TKZzz1nLBSVFubOzHmUsLjgQzSaF3PA495lyxmcYxm7n6G9cd/tMzPocid1P7QoAWKORGiAUUUUADD2lMuHaUmMBTa/ptxvIPkTFhGhyFXEvRltkmTJXFo6/LmUeZZptVkdGXGPSO9zEcwnSarJjB29m4ndKpZRjG44YamjyOm98iqvgE8n6SYzaRB8hd6/EeN0yMhbyf5kRDhDzkN1OsZwqkAKt7QB2uB5eKPsZIRsw4g2JI0NdixhEYOWyNy4JsgEA/8A3BBmyBRsA9Dhy3kH5R38cyv+63IETGN98sLLE+0IXpGQLvzsMaWLDt62W+Sq/Qe8cpXgaVFGd93OTIXb2U3tHtZ4k9JpcuQkYcRPNhtvKiwR6zwJb/c6bF/6SHI9/NlACkURQT9Rz9IM/UczCt7BLJCqaUWSaAHjmRZRLqOnZHCs4d6BYq24KefTfvBliVRJbhACSpJChIgkyQWUgHDHxJqnvIBpIGMRaKEc3I7wBZIA+sB1PVFHCCz7+JD1YxyVtbD2ock195nanqIHC8zOz6p3+Ywcznl/RJ8LgpRRbl1DN3MqijqtzBtvJQwEkEkwtREk9ogD+lYcZPrnVadMYHo7TmNB0p35bgToMKhF2rKQwliJenTldbNTH1OvRO5tvaZDdZzFvQxA8AR2gNbqHQB+X9VmHqeiuOV5m5o/6k2L/mFn6TTwdR02YcEA/sYUmBwn+nZPymKegf2uL80UW0KPPEMi8UUQhpPC1ERRQWQN1GFX9IaMeZ8fpQlF8gRRT0UYSLdN0bIw3ZGCLV2x/wDiAZVCsQDYB7+8UUGSsiEdhxFFGUV6bqOREZMZpWPNAX7cHxNLQf07q9R63Vlx9y+Q16fcX3iimTKAeq6RMOTYjhwFQkqbG8qCw/Q3Bd8UUO40TTGzV9fftcvbGij1El/bxcUUuInkpDx90UUBDPkA7wPN1EdlH6mKKc+rNouKQDlzs3zGVxRTmLFHAiigBNU95MxRRgX6TRZMh9A49z2m/o+kJj5b1NFFGhhzihZ4ExNd1juuP94ooMGZWDE+RjR58k+BLhkXHYWmb39o0UQgJzfMliBv09/9oooAF/Dy/nP/AFRRRQGf/9k=);">
+                    </div>
+                    <div class="img"
+                        style="background-image: url(https://coda.newjobs.com/api/imagesproxy/ms/cms/content30/images/half-of-all-high-paying-jobs-require-coding.jpg );">
+                    </div>
+                </div>
+
+                <div class="cstm_img2">
+                    <div class="img"
+                        style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJYHiEziaz5A3m4Uu9n71EOzvB74EQu8WxA&usqp=CAU);">
+                    </div>
+                    <div class="img"
+                        style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo_kuW-2nvWxTRlLSnElwerO5dgkVXVMEx0hejsTKJG3rNoF5nzeVekJOlEojH4OQhTR8&usqp=CAU);">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="services">
+        <div class="content4">
+            <h1 style="color: white; font-family: 'Varela Round', sans-serif;font-size: 15px;">TECHNOLOGIES</h1>
+            <h2
+                style="color: white; font-family: 'Varela Round', sans-serif;font-size: 41px;position: relative;bottom: 22px;">
+                we offer a wide </h2>
+            <h3
+                style="color: white; font-family: 'Varela Round', sans-serif;font-size: 41px;position: relative;bottom: 70px;">
+                variety of IT services</h3>
+        </div>
+        <div class="row">
+
+            <div class="coloumn">
+                <i class="fas fa-basketball-ball"></i>
+            </div>
+            <div class="coloumn">
+                <i class="fas fa-cubes"></i>
+            </div>
+            <div class="coloumn">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="coloumn">
+                <i class="fas fa-cloud"></i>
+            </div>
+            <div class="coloumn">
+                <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="coloumn">
+                <i class="fas fa-database"></i>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="container5">
+        <div class="unit1">
+            <h style="font-size: 28px;">Maching Solutions!</h>
+            <br>
+            <p style="font-size: 14px;color: #777777;">
+                BSI Buisness Park   
+                <br>
+                Unit No.07, H-160 Sector-63
+                <br>
+                Noida (U.P)
+                <br>
+                India
+                <br><br>
+                Phone: +91-9717513412, 01204296844
+                <br>
+                Email: info@machtigsolutions.com
+            </p>
+
+        </div>
+        <div class="unit2">
+            <h style="font-size: 16px;position: relative;left: 33px;">Useful Links</h>
+            <ul>
+                <li style="font-size: 14px;color: #777777;">Home</li>
+                <br>
+                <li style="font-size: 14px;color: #777777;">About us</li>
+                <br>
+                <li style="font-size: 14px;color: #777777;">Services</li>
+                <br>
+                <li style="font-size: 14px;color: #777777;">Term of services</li>
+                <br>
+                <li style="font-size: 14px;color: #777777;">Privacy policy</li>
+            </ul>
+        </div>
+        <div class="unit3">
+            <h style="font-size: 16px; position: relative;left: 33px;">Our Services</h>
+            <ul>
+                <li style="font-size: 14px;color: #777777;">Web Design</li>
+                <br>
+                <li style="font-size: 14px;color: #777777;">Web Development</li>
+                <br>
+                <li style="font-size: 14px;color: #777777;">Product Managment</li>
+                <br>
+                <li style="font-size: 14px;color: #777777;">Marketing</li>
+                <br>
+                <li style="font: size 14px;color: #777777;">Graphic Design</li>
+            </ul>
+
+        </div>
+
+
+
+    </div>
+    <div class="footer">
+        <div class="rights">
+             
+
+            <i class="far fa-copyright" style="margin: 29px;font-size: 17px;"><strong>Machtig Solution Pvt Ltd.. All
+                    Reserved</strong><br>Made with Maching Solutions</i>
+                    
+        </div>
+        <div class="social">
+            <i class="fab fa-facebook-square" ></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-invision"></i>
+        </div>
+     
+       
+
+        
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
